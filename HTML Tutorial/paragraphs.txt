@@ -1,0 +1,87 @@
+# HTML PARAGRAPHS 
+
+Paragraf selalu dimulai pada baris baru, dan biasanya berupa blok teks.
+
+ 
+Paragraf HTML
+    Elemen HTML <p> mendefinisikan sebuah paragraf.
+
+    Paragraf selalu dimulai pada baris baru, dan browser secara otomatis menambahkan spasi putih (margin) sebelum dan sesudah paragraf.
+
+    Contoh:
+
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+
+Tampilan HTML
+    Anda tidak dapat memastikan bagaimana HTML akan ditampilkan.
+
+    Layar besar atau kecil, dan jendela yang diubah ukurannya akan menghasilkan hasil yang berbeda.
+
+    Dengan HTML, Anda tidak dapat mengubah tampilan dengan menambahkan spasi ekstra atau baris tambahan dalam kode HTML Anda.
+
+    Browser akan secara otomatis menghapus spasi dan garis tambahan saat halaman ditampilkan:
+
+    Example
+    <p>
+    This paragraph
+    contains a lot of lines
+    in the source code,
+    but the browser
+    ignores it.
+    </p>
+
+    <p>
+    This paragraph
+    contains         a lot of spaces
+    in the source         code,
+    but the        browser
+    ignores it.
+    </p>
+
+Aturan Horisontal HTML
+    Tag <hr> mendefinisikan istirahat tematik di halaman HTML, dan paling sering ditampilkan sebagai aturan horizontal.
+
+    Elemen <hr> digunakan untuk memisahkan konten (atau menentukan perubahan) di halaman HTML:
+
+    Contoh
+
+    <h1>This is heading 1</h1>
+    <p>This is some text.</p>
+    <hr>
+    <h2>This is heading 2</h2>
+    <p>This is some other text.</p>
+    <hr>
+
+Pemisahan Baris HTML
+    Elemen HTML <br> mendefinisikan jeda baris.
+
+    Gunakan <br> jika Anda ingin jeda baris (baris baru) tanpa memulai paragraf baru:
+
+    Contoh
+
+    <p>This is<br>a paragraph<br>with line breaks.</p>
+
+Masalah Puisi
+    Puisi ini akan ditampilkan dalam satu baris:
+
+    Masalah Puisi
+    Puisi ini akan ditampilkan dalam satu baris:
+
+Solusi - Elemen <pre> HTML
+    Elemen HTML <pre> mendefinisikan teks yang telah diformat sebelumnya.
+
+    Teks di dalam elemen <pre> ditampilkan dalam font dengan lebar tetap (biasanya Courier), dan mempertahankan spasi dan jeda baris:
+
+    Contoh
+
+    <pre>
+    My Bonnie lies over the ocean.
+
+    My Bonnie lies over the sea.
+
+    My Bonnie lies over the ocean.
+
+    Oh, bring back my Bonnie to me.
+    </pre>
+

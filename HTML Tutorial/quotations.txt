@@ -1,0 +1,70 @@
+# QUOTATIONS 
+
+Kutipan HTML dan Elemen Kutipan
+
+Dalam bab ini kita akan membahas elemen HTML <blockquote>,<q>, <abbr>, <address>, <cite>, dan <bdo>.
+
+
+HTML <blockquote> untuk Kutipan
+    Elemen HTML <blockquote> mendefinisikan bagian yang dikutip dari sumber lain.
+
+    Browser biasanya mengindentasi elemen <blockquote>.
+
+    Contoh
+
+    <p>Here is a quote from WWF's website:</p>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+    For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+    </blockquote>
+
+HTML <q> untuk Kutipan Singkat
+    Tag HTML <q> mendefinisikan kutipan singkat.
+
+    Browser biasanya menyisipkan tanda kutip di sekitar kutipan.
+
+    Contoh
+    <p>Tujuan WWF adalah untuk: <q>Membangun masa depan di mana manusia hidup selaras dengan alam.</q></p>
+
+HTML <abbr> untuk Singkatan
+    Tag HTML <abbr> mendefinisikan singkatan atau akronim, seperti "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
+
+    Menandai singkatan dapat memberikan informasi yang berguna untuk browser, sistem terjemahan, dan mesin pencari.
+    Kiat: Gunakan atribut judul global untuk menampilkan deskripsi singkatan/akronim saat Anda mengarahkan kursor ke elemen.
+
+    Contoh
+    <p><abbr title="Organisasi Kesehatan Dunia">WHO</abbr> didirikan pada tahun 1948.</p>
+
+HTML <address> untuk Informasi Kontak
+    Tag HTML <address> menentukan informasi kontak untuk penulis/pemilik dokumen atau artikel.
+
+    Informasi kontak dapat berupa address email, URL, address fisik, nomor telepon, pegangan media sosial, dll.
+
+    Teks dalam elemen <address> biasanya dibuat miring,
+    dan browser akan selalu menambahkan jeda baris sebelum dan sesudah elemen <address>.
+
+    Contoh
+    <address>
+    Ditulis oleh John Doe.<br>
+    Kunjungi kami di:<br>
+    Contoh.com<br>
+    Kotak 564, Disneyland<br>
+    Amerika Serikat
+    </address>
+
+HTML <cite> untuk Judul Pekerjaan
+    Tag HTML <cite> menentukan judul karya kreatif (misalnya buku, puisi, lagu, film, lukisan, patung, dll.).
+
+    Catatan: Nama seseorang bukanlah judul karya.
+
+    Teks dalam elemen <cite> biasanya dibuat miring.
+
+    Contoh
+    <p><cite>Jeritan</cite> oleh Edvard Munch. Dilukis pada tahun 1893.</p>
+
+HTML <bdo> untuk Penggantian Dua Arah
+    BDO adalah singkatan dari Bi-Directional Override.
+
+    Tag HTML <bdo> digunakan untuk mengganti arah teks saat ini:
+
+    Contoh
+    <bdo dir="rtl">Teks ini akan ditulis dari kanan ke kiri</bdo>

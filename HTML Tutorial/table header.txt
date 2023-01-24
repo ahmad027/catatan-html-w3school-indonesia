@@ -1,0 +1,108 @@
+# HTML Table Headers
+
+Tabel HTML dapat memiliki header untuk setiap kolom atau baris, atau untuk banyak kolom/baris.
+
+Header Tabel HTML
+    Header tabel didefinisikan dengan elemen th. Setiap elemen th mewakili sel tabel.
+
+    Contoh
+
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+
+Header Tabel Vertikal
+    Untuk menggunakan kolom pertama sebagai tajuk tabel, tentukan sel pertama di setiap baris sebagai elemen <th>:
+
+    Contoh
+
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <td>Jill</td>
+            <td>Eve</td>
+        </tr>
+        <tr>
+            <th>Lastname</th>
+            <td>Smith</td>
+            <td>Jackson</td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td>94</td>
+            <td>50</td>
+        </tr>
+    </table>
+
+Sejajarkan Header Tabel
+    Secara default, header tabel dicetak tebal dan di tengah:
+
+    Untuk meratakan kiri header tabel, gunakan properti perataan teks CSS:
+
+    Example
+    th {
+        text-align: left;
+    }
+
+Header untuk Beberapa Kolom
+    Anda dapat memiliki tajuk yang mencakup lebih dari dua kolom atau lebih.
+
+    Untuk melakukannya, gunakan atribut colspan pada elemen <th>:
+
+    <table>
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+        <td>94</td>
+    </tr>
+    </table>
+
+Keterangan Tabel
+    Anda dapat menambahkan keterangan yang berfungsi sebagai judul untuk seluruh tabel.
+
+    Untuk menambahkan keterangan pada tabel, gunakan tag <caption>:
+
+    Contoh
+
+    <table style="width:100%">
+        <caption>Monthly savings</caption>
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>$50</td>
+        </tr>
+    </table>
+
+    Catatan: Tag <caption> harus disisipkan tepat setelah tag <table>.
+
+

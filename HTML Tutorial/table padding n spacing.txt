@@ -1,0 +1,61 @@
+# HTML Table Padding & Spacing
+
+Tabel HTML dapat menyesuaikan padding di dalam sel, dan juga jarak antar sel.
+
+Tabel HTML - Padding Sel
+    Padding sel adalah ruang antara tepi sel dan konten sel.
+
+    Secara default padding diatur ke 0.
+
+    Untuk menambahkan padding pada sel tabel, gunakan properti padding CSS:
+
+    Contoh
+
+    th, td {
+        padding: 15px;
+    }
+
+    Untuk menambahkan padding hanya di atas konten, gunakan properti padding-top.
+
+    Dan sisi lainnya dengan properti padding-bottom, padding-left, dan padding-right:
+
+    Contoh
+
+    th, td {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 40px;
+    }
+
+Tabel HTML - Penspasian Sel
+    Jarak sel adalah ruang antara setiap sel.
+
+    Secara default ruang diatur ke 2 piksel.
+
+    Untuk mengubah spasi antar sel tabel, gunakan properti CSS border-spacing pada elemen tabel:
+
+    Contoh
+
+    table {
+        border-spacing: 30px;
+    }
+
+Pemisah Horisontal
+
+    Jika Anda menentukan batas hanya di bagian bawah setiap baris tabel, Anda akan memiliki tabel dengan pembagi horizontal.
+
+    Tambahkan properti border-bottom ke semua elemen tr untuk mendapatkan pembagi horizontal:
+
+    Contoh
+
+    tr {
+        border-bottom: 1px solid #ddd;
+    }
+
+Hoverable Table
+    Gunakan pemilih :hover pada tr untuk menyorot baris tabel pada mouse:
+
+    Example
+    
+    tr:hover {background-color: #D6EEEE;}

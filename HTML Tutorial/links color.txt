@@ -1,0 +1,61 @@
+# Tautan HTML - Warna Berbeda
+
+Tautan HTML ditampilkan dalam warna berbeda tergantung pada apakah telah dikunjungi, belum dikunjungi, atau aktif.
+
+Warna Tautan HTML
+    Secara default, tautan akan muncul seperti ini (di semua browser):
+
+    Tautan yang belum dikunjungi digarisbawahi dan berwarna biru
+    Tautan yang dikunjungi digarisbawahi dan berwarna ungu
+    Tautan aktif digarisbawahi dan berwarna merah
+    Anda dapat mengubah warna status tautan
+    , dengan menggunakan CSS:
+
+    Contoh
+    Di sini, tautan yang belum dikunjungi akan berwarna hijau tanpa garis bawah. Tautan yang dikunjungi akan berwarna merah muda tanpa garis bawah. Tautan aktif akan berwarna kuning dan digarisbawahi. Selain itu, saat mengarahkan mouse ke sebuah tautan (a:hover) itu akan menjadi merah dan digarisbawahi:
+
+    <style>
+    a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+    }
+
+    a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+    }
+
+    a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+    }
+
+    a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+    }
+    </style>
+
+Tombol Tautan
+    Tautan juga dapat ditata sebagai tombol, dengan menggunakan CSS:
+
+    Contoh:
+
+    <style>
+    a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    }
+
+    a:hover, a:active {
+    background-color: red;
+    }
+    </style>

@@ -1,0 +1,24 @@
+ # HTML Links - Create Bookmarks
+
+ Tautan HTML dapat digunakan untuk membuat bookmark, sehingga pembaca dapat melompat ke bagian tertentu dari halaman web.
+
+Buat Bookmark dalam HTML
+    Bookmark dapat bermanfaat jika halaman web sangat panjang.
+
+    Untuk membuat bookmark - buat bookmark terlebih dahulu, lalu tambahkan tautan ke sana.
+
+    Saat tautan diklik, halaman akan bergulir ke bawah atau ke atas ke lokasi dengan bookmark.
+    Contoh
+    Pertama, gunakan atribut id untuk membuat bookmark:
+
+    <h2 id="C4">Chapter 4</h2>
+
+    Kemudian, tambahkan tautan ke bookmark ("Lompat ke Bab 4"), dari dalam halaman yang sama:
+
+    Contoh  
+
+    <a href="#C4">Jump to Chapter 4</a>
+
+    Anda juga dapat menambahkan tautan ke bookmark di halaman lain:
+
+    <a href="html_demo.html#C4">Lompat ke Bab 4</a>

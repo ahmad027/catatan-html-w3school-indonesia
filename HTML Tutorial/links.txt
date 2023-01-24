@@ -1,0 +1,119 @@
+# HTNL LINKS 
+
+Tautan ditemukan di hampir semua halaman web. Tautan memungkinkan pengguna mengeklik dari halaman ke halaman.
+
+Tautan HTML - Hyperlink
+    Tautan HTML adalah hyperlink.
+
+    Anda dapat mengklik tautan dan melompat ke dokumen lain.
+
+    Saat Anda menggerakkan mouse ke atas tautan, panah mouse akan berubah menjadi tangan kecil.
+
+    Catatan: Tautan tidak harus berupa teks.
+    Tautan dapat berupa gambar atau elemen HTML lainnya!
+
+Tautan HTML - Sintaks
+    Tag HTML <a> mendefinisikan hyperlink. Ini memiliki sintaks berikut:
+
+    <a href="url">link text</a>
+
+    Atribut paling penting dari elemen <a> adalah atribut href, yang menunjukkan tujuan tautan.
+
+    Teks tautan adalah bagian yang akan terlihat oleh pembaca.
+
+    Mengklik teks tautan, akan mengarahkan pembaca ke alamat URL yang ditentukan.
+
+    Contoh
+    Contoh ini menunjukkan cara membuat link ke W3Schools.com:
+
+    <a href="https://www.
+    w3schools.com/">Kunjungi W3Schools.com!</a>
+
+Secara default, tautan akan muncul sebagai berikut di semua browser:
+
+    Tautan yang belum dikunjungi digarisbawahi dan berwarna biru
+    Tautan yang dikunjungi digarisbawahi dan berwarna ungu
+    Tautan aktif digarisbawahi dan berwarna merah
+
+    Tip: Tautan tentu saja dapat ditata dengan CSS, untuk mendapatkan tampilan lain!
+
+Tautan HTML - Atribut target
+    Secara default, halaman tertaut akan ditampilkan di jendela browser saat ini. Untuk mengubahnya, Anda harus menentukan target lain untuk tautan tersebut.
+
+    Atribut target menentukan tempat untuk membuka dokumen tertaut.
+
+    Atribut target dapat memiliki salah satu dari nilai berikut:
+
+    _self - Bawaan.
+    Membuka dokumen di jendela/tab yang sama saat diklik
+    _blank - Membuka dokumen di jendela atau tab baru
+    _parent - Membuka dokumen di bingkai induk
+    _top - Membuka dokumen di seluruh jendela
+
+    Contoh
+    Gunakan target="_blank" untuk membuka dokumen tertaut di jendela atau tab browser baru:
+
+    <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+
+URL absolut vs. URL relatif
+    Kedua contoh di atas menggunakan URL absolut (alamat web lengkap) di atribut href.
+
+    Tautan lokal (tautan ke halaman dalam situs web yang sama) ditentukan dengan URL relatif (tanpa bagian "https://www"):
+
+    Contoh
+
+    <h2>Absolute URLs</h2>
+    <p><a href="https://www.w3.org/">W3C</a></p>
+    <p><a href="https://www.google.com/">Google</a></p>
+
+    <h2>Relative URLs</h2>
+    <p><a href="html_images.asp">HTML Images</a></p>
+    <p><a href="/css/default.asp">CSS Tutorial</a></p>
+
+Tautan HTML - Gunakan Gambar sebagai Tautan
+    Untuk menggunakan gambar sebagai tautan, cukup masukkan tag <img> di dalam tag <a>:
+
+    Contoh
+
+    <a href="default.asp">
+    <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+    </a>
+
+Tautkan ke Alamat Email
+    Gunakan mailto: di dalam atribut href untuk membuat tautan yang membuka program email pengguna (agar mereka dapat mengirim email baru):
+
+    Contoh
+
+    <a href="mailto:someone@example.com">Send email</a>
+
+Tombol sebagai Tautan
+    Untuk menggunakan tombol HTML sebagai tautan, Anda harus menambahkan beberapa kode JavaScript.
+
+    JavaScript memungkinkan Anda menentukan apa yang terjadi pada peristiwa tertentu, seperti klik tombol:
+
+    Contoh
+
+    <button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+Tautan Judul
+    Atribut judul menentukan informasi tambahan tentang suatu elemen. Informasi paling sering ditampilkan sebagai teks tooltip saat mouse bergerak di atas elemen.
+
+    Contoh
+
+    <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
+Lebih lanjut tentang URL Mutlak dan URL Relatif
+    Contoh
+    Gunakan URL lengkap untuk menautkan ke halaman web:
+
+    <a href="https://www.w3schools.com/html/default.asp">HTML tutorial</a>
+
+    Contoh
+    Tautan ke halaman yang terletak di folder html di situs web saat ini:
+
+    <a href="/html/default.asp">HTML tutorial</a>
+
+    Contoh
+    Tautkan ke halaman yang terletak di folder yang sama dengan halaman saat ini:
+
+    <a href="default.asp">tutorial HTML</a>

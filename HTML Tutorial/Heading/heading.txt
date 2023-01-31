@@ -1,0 +1,23 @@
+# HTML Heading
+
+Heading HTML adalah judul atau subtitle yang ingin Anda tampilkan di halaman web.
+
+
+Judul HTML ditentukan dengan tag <h1> hingga <h6>.
+
+    <h1> mendefinisikan heading yang paling penting. <h6> mendefinisikan heading yang paling tidak penting.
+
+Judul Penting
+    Mesin pencari menggunakan judul untuk mengindeks struktur dan konten halaman web Anda.
+
+    Pengguna sering membaca sekilas halaman berdasarkan judulnya. Penting untuk menggunakan judul untuk menunjukkan struktur dokumen.
+
+    heading <h1> harus digunakan untuk judul utama, diikuti oleh heading h2, lalu h3 yang kurang penting, dan seterusnya.
+
+Judul Lebih Besar
+    Setiap heading HTML memiliki ukuran default. Namun, Anda dapat menentukan ukuran judul apa pun dengan atribut style, menggunakan properti font-size CSS:
+
+    Contoh
+
+        <h1 style="font-size:60px;">Heading 1</h1>
+

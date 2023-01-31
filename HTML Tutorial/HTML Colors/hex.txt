@@ -1,0 +1,117 @@
+# HEX
+
+Warna HTML HEX
+
+Warna heksadesimal ditentukan dengan: #RRGGBB, di mana bilangan bulat heksadesimal RR (merah), GG (hijau), dan BB (biru) menentukan komponen warna.
+
+Nilai Warna HEX
+    Dalam HTML, warna dapat ditentukan menggunakan nilai heksadesimal dalam bentuk:
+
+    #rrggbb
+
+    Dimana rr (merah),
+    gg (hijau) dan bb (biru) adalah nilai heksadesimal antara 00 dan ff (sama dengan desimal 0-255).
+
+    Misalnya, #ff0000 ditampilkan sebagai merah, karena merah disetel ke nilai tertinggi (ff), dan dua lainnya (hijau dan biru) disetel ke 00.
+
+    Contoh lain, #00ff00 ditampilkan sebagai hijau, karena hijau diatur ke nilai tertinggi (ff),
+    dan dua lainnya (merah dan biru) disetel ke 00.
+
+    Untuk menampilkan warna hitam, atur semua parameter warna ke 00, seperti ini: #000000.
+
+    Untuk menampilkan warna putih, atur semua parameter warna ke ff, seperti ini: #ffffff.
+
+    Bereksperimenlah dengan mencampurkan nilai HEX di bawah ini:
+
+    #ff6347
+
+Bayangan abu-abu
+    Nuansa abu-abu sering didefinisikan menggunakan nilai yang sama untuk ketiga parameter:
+
+    Contoh
+    #404040
+    #686868
+    #a0a0a0
+    #bebebe
+    #dcdcdc
+    #f8f8f8
+
+Warna HTML HSL dan HSLA
+
+    HSL adalah singkatan dari hue, saturation, dan lightness.
+
+    Nilai warna HSLA merupakan perpanjangan dari HSL dengan saluran Alpha (opacity).
+
+Nilai Warna HSL
+    Dalam HTML, warna dapat ditentukan menggunakan hue, saturation, dan lightness (HSL) dalam bentuk:
+
+    hsl(rona, saturasi, keringanan)
+    Hue adalah derajat pada roda warna dari 0 sampai 360. 0 berarti merah, 120 berarti hijau, dan 240 berarti biru.
+
+    Saturasi adalah nilai persentase. 0% berarti warna abu-abu, dan 100% berarti warna penuh.
+
+    Lightness juga merupakan nilai persentase. 0% adalah hitam, dan 100% adalah putih.
+
+    Eksperimen dengan mencampurkan nilai HSL di bawah ini:
+
+    hsl(0, 100%, 50%)
+
+    
+    Contoh
+    hsl(0, 100%, 50%)
+    hsl(240, 100%, 50%)
+    hsl(147, 50%, 47%)
+    hsl(300, 76%, 72%)
+    hsl(39, 100%, 50%)
+    hsl(248, 53%, 58%)
+
+Kejenuhan
+    Saturasi dapat digambarkan sebagai intensitas warna.
+
+    100% adalah warna murni, tidak ada nuansa abu-abu.
+
+    50% adalah 50% abu-abu, tetapi Anda masih bisa melihat warnanya.
+
+    0% benar-benar abu-abu; Anda tidak bisa lagi melihat warnanya.
+
+    Contoh
+    hsl(0, 100%, 50%)
+    hsl(0, 80%, 50%)
+    hsl(0, 60%, 50%)
+    hsl(0, 40%, 50%)
+    hsl(0, 20%, 50%)
+    hsl(0, 0%, 50%)
+
+Keringanan
+    Kecerahan suatu warna dapat digambarkan sebagai seberapa banyak cahaya yang ingin diberikan warna, di mana 0% berarti tidak ada cahaya (hitam), 50% berarti 50% terang (tidak gelap maupun terang), dan 100% berarti terang penuh (putih). ).
+
+    Contoh
+    hsl(0, 100%, 0%)
+    hsl(0, 100%, 25%)
+    hsl(0, 100%, 50%)
+    hsl(0, 100%, 75%)
+    hsl(0, 100%, 90%)
+    hsl(0, 100%, 100%)
+
+Bayangan abu-abu
+    Nuansa abu-abu sering ditentukan dengan mengatur rona dan saturasi ke 0, dan menyesuaikan kecerahan dari 0% hingga 100% untuk mendapatkan nuansa yang lebih gelap/terang:
+
+    Contoh
+    hsl(0, 0%, 20%)
+    hsl(0, 0%, 30%)
+    hsl(0, 0%, 40%)
+    hsl(0, 0%, 60%)
+    hsl(0, 0%, 70%)
+    hsl(0, 0%, 90%)
+
+Nilai Warna HSLA
+    Nilai warna HSLA merupakan perpanjangan dari nilai warna HSL, dengan saluran Alpha - yang menentukan opasitas warna.
+
+    Nilai warna HSLA ditentukan dengan:
+
+    hsla(rona, saturasi, keringanan, alfa)
+
+    Parameter alfa adalah angka antara 0,0 (sepenuhnya transparan) dan 1,0 (tidak transparan sama sekali):
+    Eksperimen dengan mencampurkan nilai HSLA di bawah ini:
+
+    hsla(0, 100%, 50%, 0,5)

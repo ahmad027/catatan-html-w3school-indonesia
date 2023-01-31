@@ -1,0 +1,96 @@
+# HTML Table Colgroup
+
+Elemen <colgroup> digunakan untuk menata kolom tertentu dari sebuah tabel.
+
+Grup Tabel HTML
+    Jika Anda ingin memberi gaya pada dua kolom pertama tabel, gunakan elemen <colgroup> dan <col>.
+
+    Elemen <colgroup> harus digunakan sebagai wadah untuk spesifikasi kolom.
+
+    Setiap grup ditentukan dengan elemen <col>.
+
+    Atribut span menentukan berapa banyak kolom yang mendapatkan gaya.
+
+    Atribut style menentukan gaya untuk memberikan kolom.
+
+    Catatan: Pilihan properti CSS legal untuk colgroup sangat terbatas.
+
+    contoh :
+
+    <table>
+        <colgroup>
+            <col span="2" style="background-color: #D6EEEE">
+        </colgroup>
+        <tr>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+        </tr>
+    </table>
+
+    Catatan: Tag <colgroup> harus merupakan turunan dari elemen <table> dan harus ditempatkan sebelum elemen tabel lainnya, seperti <thead>, <tr>, <td> dll., tetapi setelah elemen <caption>, jika hadir.
+
+Legal CSS Properties
+    Hanya ada pilihan properti CSS yang sangat terbatas yang diizinkan untuk digunakan dalam colgroup:
+
+    width property
+    visibility property
+    background properties
+    border properties
+
+    Semua properti CSS lainnya tidak akan berpengaruh pada tabel Anda.
+
+Beberapa Elemen Col
+    Jika Anda ingin menata lebih banyak kolom dengan gaya berbeda, gunakan lebih banyak elemen <col> di dalam <colgroup>:
+
+    Contoh
+
+    <table>
+        <colgroup>
+            <col span="2" style="background-color: #D6EEEE">
+            <col span="3" style="background-color: pink">
+        </colgroup>
+        <tr>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+        </tr>
+    </table>
+
+Colgroup Kosong
+    Jika Anda ingin menata kolom di tengah tabel, sisipkan elemen <col> "kosong" (tanpa gaya) untuk kolom sebelumnya:
+
+    Contoh
+
+    <table>
+        <colgroup>
+            <col span="3">
+            <col span="2" style="background-color: pink">
+        </colgroup>
+        <tr>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+        </tr>
+    </table>
+
+Sembunyikan Kolom
+    Anda dapat menyembunyikan kolom dengan properti visibility: collapse:
+
+    Contoh
+
+    <table>
+        <colgroup>
+            <col span="2">
+            <col span="3" style="visibility: collapse">
+        </colgroup>
+        <tr>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+        </tr>
+    </table>

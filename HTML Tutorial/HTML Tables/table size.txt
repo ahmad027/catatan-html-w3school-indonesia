@@ -1,0 +1,79 @@
+# HTML Table Sizes
+
+Tabel HTML dapat memiliki ukuran yang berbeda untuk setiap kolom, baris, atau seluruh tabel.
+
+Gunakan atribut style dengan properti width atau height untuk menentukan ukuran tabel, baris, atau kolom.
+
+Lebar Tabel HTML
+    Untuk mengatur lebar tabel, tambahkan atribut style ke elemen <table> :
+
+    Contoh
+    Atur lebar tabel menjadi 100%:
+
+    <table style="width:100%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+
+    Catatan: Menggunakan persentase sebagai satuan ukuran lebar berarti seberapa lebar elemen ini dibandingkan dengan elemen induknya, yang dalam hal ini adalah elemen <body>.
+
+Lebar Kolom Tabel HTML
+    Untuk mengatur ukuran kolom tertentu, tambahkan atribut style pada elemen <th> atau <td>:
+
+    Contoh
+    Atur lebar kolom pertama menjadi 70%:
+
+    <table style="width:100%">
+        <tr>
+            <th style="width:70%">Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+
+Tinggi Baris Tabel HTML
+    Untuk mengatur tinggi baris tertentu, tambahkan atribut style pada elemen baris tabel:
+
+    Contoh
+    Atur tinggi baris kedua menjadi 200 piksel:
+
+    <table style="width:100%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr style="height:200px">
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>

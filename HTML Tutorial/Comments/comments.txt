@@ -1,0 +1,53 @@
+# HTML COMMENTS
+
+Komentar HTML tidak ditampilkan di browser, tetapi dapat membantu mendokumentasikan kode sumber HTML Anda.
+
+Tag Komentar HTML
+    Anda dapat menambahkan komentar ke sumber HTML Anda dengan menggunakan sintaks berikut:
+
+    <!-- Tulis komentar Anda di sini -->
+    Perhatikan bahwa ada tanda seru (!) di tag awal, tetapi tidak di tag akhir.
+
+Tambahkan Komentar
+    Dengan komentar, Anda dapat menempatkan pemberitahuan dan pengingat dalam kode HTML Anda:
+
+    Contoh
+    <!-- Ini adalah komentar -->
+
+    <p>Ini adalah sebuah paragraf.</p>
+
+    <!-- Ingatlah untuk menambahkan lebih banyak informasi di sini -->
+
+Sembunyikan Konten
+    Komentar dapat digunakan untuk menyembunyikan konten.
+
+    Ini dapat membantu jika Anda menyembunyikan konten untuk sementara:
+
+    Contoh
+    <p>Ini adalah sebuah paragraf.</p>
+
+    <!-- <p>Ini paragraf lain </p> -->
+
+    <p>Ini juga sebuah paragraf.</p>
+
+    Anda juga dapat menyembunyikan lebih dari satu baris. Segala sesuatu antara <!-- dan --> akan disembunyikan dari tampilan.
+
+    Contoh
+    Sembunyikan bagian kode HTML:
+
+    <p>Ini adalah sebuah paragraf.</p>
+    <!--
+    <p>Lihat gambar keren ini:</p>
+    <img border="0" src="pic_trulli.jpg" alt="Trulli">
+    -->
+    <p>Ini juga sebuah paragraf.</p>
+
+    Komentar juga bagus untuk men-debug HTML, karena Anda dapat mengomentari baris kode HTML, satu per satu, untuk mencari kesalahan.
+
+Sembunyikan Konten Sebaris
+    Komentar dapat digunakan untuk menyembunyikan bagian di tengah kode HTML.
+
+    Contoh
+    Sembunyikan bagian paragraf:
+
+    <p><!-- great text --> ini adalah sebuah paragraf.</p>

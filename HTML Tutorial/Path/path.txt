@@ -1,0 +1,53 @@
+# HTML File Paths
+
+Jalur file menjelaskan lokasi file dalam struktur folder situs web.
+
+Contoh Jalur File
+
+Deskripsi Jalur
+    **** <img src="picture.jpg"> File "picture.jpg" 
+        terletak di folder yang sama dengan halaman saat ini
+    **** <img src="images/picture.jpg"> File "picture.jpg" 
+        terletak di folder gambar di folder saat ini
+    **** <img src="/images/picture.jpg"> File "picture.jpg" 
+        terletak di folder gambar di akar web saat ini
+    **** <img src="../picture.jpg"> File "picture.jpg" 
+        terletak di folder satu tingkat di atas folder saat ini
+
+Jalur Berkas HTML
+    Jalur file menjelaskan lokasi file dalam struktur folder situs web.
+
+    Jalur file digunakan saat menautkan ke file eksternal, seperti:
+
+    Web pages
+    Images
+    Style sheets
+    JavaScripts
+
+Jalur File Mutlak
+    Jalur file absolut adalah URL lengkap ke file:
+
+    Contoh
+
+    <img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain">
+
+Jalur File Relatif
+    Jalur file relatif menunjuk ke file relatif ke halaman saat ini.
+
+    Dalam contoh berikut, jalur file menunjuk ke file di folder gambar yang terletak di akar web saat ini:
+
+    Contoh
+
+    <img src="/images/picture.jpg" alt="Mountain">
+
+    Dalam contoh berikut, jalur file menunjuk ke file di folder gambar yang terletak di folder saat ini:
+
+    Contoh
+
+    <img src="images/picture.jpg" alt="Mountain">
+
+    Dalam contoh berikut, jalur file menunjuk ke file di folder gambar yang terletak di folder satu tingkat lebih tinggi dari folder saat ini:
+
+    Contoh
+
+    <img src="../images/picture.jpg" alt="Mountain">

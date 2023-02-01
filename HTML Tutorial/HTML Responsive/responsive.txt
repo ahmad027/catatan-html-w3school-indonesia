@@ -1,0 +1,89 @@
+# HTML Responsive Web Design
+
+Desain web responsif adalah tentang membuat halaman web yang terlihat bagus di semua perangkat!
+
+Desain web yang responsif akan secara otomatis menyesuaikan ukuran layar dan area pandang yang berbeda.
+
+Apa itu Desain Web Responsif?
+    Desain Web Responsif adalah tentang menggunakan HTML dan CSS untuk mengubah ukuran, menyembunyikan, mengecilkan, atau memperbesar situs web secara otomatis, agar terlihat bagus di semua perangkat (desktop, tablet, dan ponsel):
+
+Mengatur Area Pandang
+    Untuk membuat situs web yang responsif, tambahkan tag <meta> berikut ke semua halaman web Anda:
+
+    Contoh
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    Ini akan menyetel viewport halaman Anda, yang akan memberikan instruksi browser tentang cara mengontrol dimensi dan penskalaan halaman.
+
+Gambar Responsif
+    Gambar responsif adalah gambar yang diskalakan dengan baik agar sesuai dengan ukuran browser apa pun.
+
+    Menggunakan properti lebar
+    Jika properti lebar CSS diatur ke 100%, gambar akan responsif dan naik turun:
+
+    contoh 
+
+    <img src="img_girl.jpg" style="width:100%;">
+
+    Perhatikan bahwa pada contoh di atas, gambar dapat diperbesar menjadi lebih besar dari ukuran aslinya. Solusi yang lebih baik, dalam banyak kasus, adalah menggunakan properti max-width sebagai gantinya.
+
+Menggunakan properti max-width
+    Jika properti max-width disetel ke 100%, gambar akan diperkecil jika perlu, tetapi jangan pernah diperbesar menjadi lebih besar dari ukuran aslinya:
+    
+    contoh 
+
+    <img src="img_girl.jpg" style="max-width:100%;height:auto;">
+
+Tampilkan Gambar Berbeda Tergantung pada Lebar Browser
+    Elemen HTML <picture> memungkinkan Anda menentukan gambar yang berbeda untuk ukuran jendela browser yang berbeda.
+
+    Ubah ukuran jendela browser untuk melihat bagaimana gambar di bawah ini berubah bergantung pada lebarnya:
+
+    Example
+
+    <picture>
+        <source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+        <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+        <source srcset="flowers.jpg">
+        <img src="img_smallflower.jpg" alt="Flowers">
+    </picture>
+
+Ukuran Teks Responsif
+    Ukuran teks dapat diatur dengan satuan "vw", yang berarti "lebar viewport".
+
+    Dengan begitu ukuran teks akan mengikuti ukuran jendela browser:
+
+    <h1 style="font-size:10vw">Hello World</h1>
+
+Kueri Media
+    Selain mengubah ukuran teks dan gambar, kueri media juga umum digunakan di halaman web yang responsif.
+
+    Dengan kueri media, Anda dapat menentukan gaya yang sama sekali berbeda untuk ukuran browser yang berbeda.
+    Contoh: ubah ukuran jendela browser untuk melihat bahwa tiga elemen div di bawah ini akan ditampilkan secara horizontal di layar besar dan ditumpuk secara vertikal di layar kecil:
+
+    Example
+
+    <style>
+        .left, .right {
+        float: left;
+        width: 20%; /* The width is 20%, by default */
+    }
+
+    .main {
+        float: left;
+        width: 60%; /* The width is 60%, by default */
+    }
+
+    /* Use a media query to add a breakpoint at 800px: */
+    @media screen and (max-width: 800px) {
+        .left, .main, .right {
+            width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+        }
+    }
+    </style>
+
+Halaman Web Responsif - Contoh Lengkap
+    Halaman web yang responsif harus terlihat bagus di layar desktop besar dan di ponsel kecil.
+
+    

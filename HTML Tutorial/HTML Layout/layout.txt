@@ -1,0 +1,39 @@
+# HTML Layout Elements and Techniques
+
+Situs web sering kali menampilkan konten dalam beberapa kolom (seperti majalah atau surat kabar).
+
+Elemen Tata Letak HTML
+    HTML me miliki beberapa elemen semantik yang menentukan berbagai bagian halaman web:
+
+    <header> - Menentukan header untuk dokumen atau bagian
+    <nav> - Menentukan sekumpulan tautan navigasi
+    <section> - Menentukan bagian dalam dokumen
+    <article> - Mendefinisikan konten mandiri dan mandiri
+    <aside> - Mendefinisikan konten selain dari konten (seperti sidebar)
+    <footer> - Menentukan footer untuk dokumen atau bagian
+    <detail> -
+    Menentukan detail tambahan yang dapat dibuka dan ditutup pengguna sesuai permintaan
+    <summary> - Menentukan heading untuk elemen <details>
+
+Teknik Tata Letak HTML
+    Ada empat teknik berbeda untuk membuat tata letak multikolom. Setiap teknik memiliki pro dan kontra:
+
+    CSS framework
+    CSS float property
+    CSS flexbox
+    CSS grid
+
+CSS framework
+    Jika Anda ingin membuat tata letak dengan cepat, Anda dapat menggunakan framework CSS, seperti W3.CSS atau Bootstrap.
+
+CSS Float Layout
+    Adalah umum untuk melakukan seluruh tata letak web menggunakan properti float CSS. Float mudah dipelajari - Anda hanya perlu mengingat cara kerja properti float dan clear. Kekurangan: Elemen mengambang terikat pada alur dokumen, yang dapat merusak fleksibilitas. 
+
+
+CSS Flexbox Layout
+    Penggunaan flexbox memastikan bahwa elemen dapat diprediksi ketika tata letak halaman harus mengakomodasi ukuran layar yang berbeda dan perangkat tampilan yang berbeda.
+
+CSS Grid Layout
+    Modul Layout Grid CSS menawarkan sistem tata letak berbasis grid, dengan baris dan kolom, membuatnya lebih mudah untuk mendesain halaman web tanpa harus menggunakan float dan pemosisian.
+
+

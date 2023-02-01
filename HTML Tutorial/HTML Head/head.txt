@@ -1,0 +1,171 @@
+# HTML - The Head Element
+
+Elemen HTML <head> adalah wadah untuk elemen berikut: <title>, <style>, <meta>, <link>, <script>, dan <base>.
+
+Elemen HTML <head>
+    Elemen <head> adalah wadah untuk metadata (data tentang data) dan ditempatkan di antara tag <html> dan tag <body>.
+
+    Metadata HTML adalah data tentang dokumen HTML. Metadata tidak ditampilkan.
+
+    Metadata biasanya menentukan judul dokumen, rangkaian karakter, gaya, skrip, dan informasi meta lainnya.
+
+Elemen <title> HTML
+    Elemen <title> mendefinisikan judul dokumen. Judul harus berupa teks saja, dan ditampilkan di bilah judul browser atau di tab halaman.
+
+    Elemen <title> diperlukan dalam dokumen HTML!
+    Konten judul halaman sangat penting untuk pengoptimalan mesin telusur (SEO)! Judul halaman digunakan oleh algoritme mesin pencari untuk menentukan urutan saat mencantumkan halaman dalam hasil pencarian.
+
+    Elemen <title>:
+
+    menentukan judul di toolbar browser
+    memberikan judul untuk halaman saat ditambahkan ke favorit
+    menampilkan judul halaman di hasil mesin pencari
+    Jadi, usahakan untuk membuat judul seakurat dan bermakna mungkin!
+
+    Dokumen HTML sederhana:
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>A Meaningful Page Title</title>
+    </head>
+    <body>
+
+    The content of the document......
+
+    </body>
+    </html>
+
+Elemen <style> HTML
+    Elemen <style> digunakan untuk menentukan informasi gaya untuk satu halaman HTML:
+
+    Contoh
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>Page Title</title>
+    <style>
+        body {background-color: powderblue;}
+        h1 {color: red;}
+        p {color: blue;}
+    </style>
+    </head>  
+    <body>
+
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+    
+    <p>The content of the body element is displayed in the browser window.</p>
+    <p>The content of the title element is displayed in the browser tab, in favorites and in search-engine results.</p>
+
+    </body>
+    </html>
+
+Elemen HTML <link>
+    Elemen <link> mendefinisikan hubungan antara dokumen saat ini dan sumber daya eksternal.
+
+    Tag <link> paling sering digunakan untuk menautkan ke style sheet eksternal:
+
+    Contoh
+
+    <link rel="stylesheet" href="mystyle.css">
+
+Elemen HTML <meta>
+    Elemen <meta> biasanya digunakan untuk menentukan set karakter, deskripsi halaman, kata kunci, pembuat dokumen, dan pengaturan viewport.
+
+    Metadata tidak akan ditampilkan di halaman, tetapi digunakan oleh browser (cara menampilkan konten atau memuat ulang halaman), oleh mesin pencari (kata kunci), dan layanan web lainnya.
+
+Contoh
+Tentukan set karakter yang digunakan:
+    <meta charset="UTF-8">
+
+Tentukan kata kunci untuk mesin pencari:
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+
+Tentukan deskripsi halaman web Anda:
+    <meta name="description" content="Free Web tutorials">
+
+Tentukan penulis halaman:
+    <meta name="author" content="John Doe">
+
+Perbarui dokumen setiap 30 detik:
+    <meta http-equiv="refresh" content="30">
+
+Mengatur area pandang agar situs web Anda terlihat bagus di semua perangkat:
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+Example of <meta> tags:
+
+    Example
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    </head>
+    <body>
+
+    <p>All meta information goes inside the head section.</p>
+
+    </body>
+    </html>
+
+Mengatur Area Pandang
+    Area pandang adalah area yang terlihat oleh pengguna di halaman web. Ini bervariasi dengan perangkatnya - ini akan lebih kecil di ponsel daripada di layar komputer.
+
+    Anda harus menyertakan elemen <meta> berikut di semua halaman web Anda:
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    Bagian width=device-width mengatur lebar halaman untuk mengikuti lebar layar perangkat (yang akan bervariasi tergantung pada perangkat).
+
+    Bagian initial-scale=1.0 menetapkan tingkat zoom awal saat halaman pertama kali dimuat oleh browser.
+    
+Elemen HTML <script>
+    Elemen <script> digunakan untuk mendefinisikan JavaScript sisi klien.
+
+    JavaScript berikut menulis "Halo JavaScript!" ke dalam elemen HTML dengan id="demo":
+
+    Contoh
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>Page Title</title>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    }
+    </script>
+    </head>
+    <body>
+
+    <h1>My Web Page</h1>
+    <p id="demo">A Paragraph</p>
+    <button type="button" onclick="myFunction()">Try it</button>
+
+    </body>
+    </html>
+
+Elemen HTML <base>
+    Elemen <base> menentukan URL dasar dan/atau target untuk semua URL relatif di halaman.
+
+    Tag <base> harus memiliki atribut href atau target, atau keduanya.
+
+    Hanya ada satu elemen <base> tunggal dalam sebuah dokumen!
+
+    Contoh
+    Tentukan URL default dan target default untuk semua tautan di halaman:
+
+    <head>
+    <base href="https://www.w3schools.com/" target="_blank">
+    </head>
+
+    <body>
+    <img src="images/stickman.gif" width="24" height="39" alt="Stickman">
+    <a href="tags/tag_base.asp">HTML base Tag</a>
+</body>

@@ -1,0 +1,51 @@
+# HTML Iframes
+
+Iframe HTML digunakan untuk menampilkan halaman web di dalam halaman web.
+
+Sintaks Iframe HTML
+    Tag HTML <iframe> menentukan bingkai sebaris.
+
+    Bingkai sebaris digunakan untuk menyematkan dokumen lain di dalam dokumen HTML saat ini.
+
+    Sintaksis
+
+    <iframe src="url" title="description"></iframe>
+
+    Tips: Sebaiknya selalu sertakan atribut judul untuk <iframe>. Ini digunakan oleh pembaca layar untuk membacakan konten iframe.
+
+Iframe - Atur Tinggi dan Lebar
+    Gunakan atribut tinggi dan lebar untuk menentukan ukuran iframe.
+
+    Tinggi dan lebar ditentukan dalam piksel secara default:
+
+    Contoh
+
+        <iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example"></iframe>
+
+    Atau Anda dapat menambahkan atribut style dan menggunakan properti tinggi dan lebar CSS:
+
+        <iframe src="demo_iframe.htm" style="height:200px;width:300px;" title="Iframe Example"></iframe>
+
+Iframe - Hapus Perbatasan
+    Secara default, iframe memiliki batas di sekelilingnya.
+
+    Untuk menghapus batas, tambahkan atribut gaya dan gunakan properti perbatasan CSS:
+
+    Contoh
+
+        <iframe src="demo_iframe.htm" style="border:none;" title="Iframe Example"></iframe>
+
+    Dengan CSS, Anda juga dapat mengubah ukuran, gaya, dan warna batas iframe:
+
+    Contoh
+
+        <iframe src="demo_iframe.htm" style="border:2px solid red;" title="Iframe Example"></iframe>
+
+Iframe - Target untuk Tautan
+    Iframe dapat digunakan sebagai bingkai target untuk tautan.
+
+    Atribut target tautan harus mengacu pada atribut nama iframe:
+
+    Contoh
+
+    

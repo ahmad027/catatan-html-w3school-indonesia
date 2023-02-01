@@ -1,0 +1,79 @@
+# HTML Lists
+
+Daftar HTML memungkinkan pengembang web untuk mengelompokkan sekumpulan item terkait dalam daftar.
+
+    Example
+    An unordered HTML list:
+
+    * Item
+    * Item
+    * Item
+    * Item
+
+    An ordered HTML list:
+
+    1 First item
+    2 Second item
+    3 Third item
+    4 Fourth item
+
+Unordered HTML List
+    Daftar yang tidak diurutkan dimulai dengan tag <ul>. Setiap item daftar dimulai dengan tag <li>.
+
+    Item daftar akan ditandai dengan bullet (lingkaran hitam kecil) secara default:
+
+    Contoh
+
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+Ordered HTML List
+    Daftar yang diurutkan dimulai dengan tag <ol>. Setiap item daftar dimulai dengan tag <li>.
+
+    Item daftar akan ditandai dengan angka secara default:
+
+    Contoh
+
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+HTML Description Lists
+    HTML juga mendukung daftar deskripsi.
+
+    Daftar deskripsi adalah daftar istilah, dengan deskripsi setiap istilah.
+
+    Tag <dl>   tag defines the description list = mendefinisikan daftar deskripsi, tag <dt>  tag defines the term (name) = mendefinisikan istilah (nama), dan tag <dd> tag describes each term = menjelaskan setiap istilah:
+
+    Contoh
+
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+    </dl>
+
+HTML List Tags
+    Tag	Description
+    <ul>	Defines an unordered list
+    <ol>	Defines an ordered list
+    <li>	Defines a list item
+    <dl>	Defines a description list
+    <dt>	Defines a term in a description list
+    <dd>	Describes the term in a description list
+
+    -------------------------------------------------
+
+    Deskripsi Label
+    <ul> Mendefinisikan daftar unordered
+    <ol> Mendefinisikan daftar yang diurutkan
+    <li> Menentukan item daftar
+    <dl> Mendefinisikan daftar deskripsi
+    <dt> Mendefinisikan istilah dalam daftar deskripsi
+    <dd> Menjelaskan istilah dalam daftar deskripsi

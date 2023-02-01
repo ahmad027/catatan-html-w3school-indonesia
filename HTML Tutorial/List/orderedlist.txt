@@ -1,0 +1,97 @@
+# HTML Ordered Lists
+
+Tag HTML <ol> mendefinisikan daftar yang diurutkan. Daftar yang dipesan dapat berupa angka atau abjad.
+
+Ordered HTML List
+    Daftar yang diurutkan dimulai dengan tag <ol>. Setiap item daftar dimulai dengan tag <li>.
+
+    Item daftar akan ditandai dengan angka secara default:
+
+    Contoh
+
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+Daftar HTML Terurut - Atribut Tipe
+    Atribut type dari tag <ol>, menentukan jenis penanda item daftar:
+
+    Type	Description
+    type="1"	The list items will be numbered with numbers (default)
+    type="A"	The list items will be numbered with uppercase letters
+    type="a"	The list items will be numbered with lowercase letters
+    type="I"	The list items will be numbered with uppercase roman numbers
+    type="i"	The list items will be numbered with lowercase roman numbers
+
+    ----------------------------------------------------
+
+    Type Deskripsi
+    type="1" Item daftar akan diberi nomor dengan angka (default)
+    type="A" Item daftar akan diberi nomor dengan huruf kapital
+    type="a" Item daftar akan diberi nomor dengan huruf kecil
+    type="I" Item daftar akan diberi nomor dengan angka romawi huruf besar
+    type="i" Item daftar akan diberi nomor dengan angka romawi huruf kecil
+
+    Numbers:
+        <ol type="1">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        </ol>
+
+    Uppercase Letters:
+        <ol type="A">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+
+    Lowercase Letters:
+        <ol type="a">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+
+    Uppercase Roman Numbers:
+        <ol type="I">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+
+    Lowercase Roman Numbers:
+        <ol type="i">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+
+Penghitungan Daftar Kontrol
+    Secara default, daftar terurut akan mulai menghitung dari 1. Jika Anda ingin mulai menghitung dari angka tertentu, Anda dapat menggunakan atribut mulai:
+
+    Contoh
+
+    <ol start="50">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+Daftar HTML Bersarang
+    Daftar dapat disarangkan (daftar di dalam daftar):
+
+    Contoh
+
+    <ol>
+        <li>Coffee</li>
+        <li>Tea
+            <ol>
+            <li>Black tea</li>
+            <li>Green tea</li>
+            </ol>
+        </li>
+        <li>Milk</li>
+    </ol>

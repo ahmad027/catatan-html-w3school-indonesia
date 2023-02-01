@@ -1,0 +1,131 @@
+# HTML Unordered Lists
+
+Tag HTML <ul> mendefinisikan daftar unordered (bullet).
+
+Unordered HTML List
+    Daftar yang tidak diurutkan dimulai dengan tag <ul>. Setiap item daftar dimulai dengan tag <li>.
+
+    Item daftar akan ditandai dengan bullet (lingkaran hitam kecil) secara default:
+
+    Contoh
+
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+Daftar HTML Tidak Terurut - Pilih Penanda Item Daftar
+
+    Properti tipe gaya daftar CSS digunakan untuk menentukan gaya penanda item daftar. Itu dapat memiliki salah satu dari nilai berikut:
+
+    Value	Description
+    disc	Sets the list item marker to a bullet (default)
+    circle	Sets the list item marker to a circle
+    square	Sets the list item marker to a square
+    none	The list items will not be marked
+    
+    ------------------------------
+
+    Deskripsi Nilai
+    disc         Mengatur penanda item daftar menjadi bullet (default)
+    lingkaran    Mengatur penanda item daftar ke lingkaran
+    kotak        Mengatur penanda item daftar menjadi kotak
+    none         Item daftar tidak akan ditandai
+
+    Example - Disc
+        <ul style="list-style-type:disc;">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+
+    Example - Circle
+        <ul style="list-style-type:circle;">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+
+    Example - Square
+        <ul style="list-style-type:square;">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+
+    Example - None
+        <ul style="list-style-type:none;">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+
+Nested HTML Lists
+    Daftar dapat disarangkan (daftar di dalam daftar):
+
+    Contoh
+
+    <ul>
+        <li>Coffee</li>
+        <li>Tea
+            <ul>
+                <li>Black tea</li>
+                <li>Green tea</li>
+            </ul>
+        </li>
+        <li>Milk</li>
+    </ul>
+
+Catatan: Item daftar (<li>) dapat berisi daftar baru, dan elemen HTML lainnya, seperti gambar dan tautan, dll.
+
+Horizontal List with CSS
+    Daftar HTML dapat ditata dalam berbagai cara dengan CSS.
+
+    Salah satu cara yang populer adalah menata daftar secara horizontal, untuk membuat menu navigasi:
+
+    Contoh
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: #111111;
+    }
+    </style>
+    </head>
+    <body>
+
+    <h2>Navigation Menu</h2>
+    <p>In this example, we use CSS to style the list horizontally, to create a navigation menu:</p>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+
+    </body>
+    </html>

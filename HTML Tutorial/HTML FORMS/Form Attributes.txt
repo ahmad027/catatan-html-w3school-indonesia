@@ -1,0 +1,119 @@
+FORM Atributtes
+
+The Action Attribute
+    Atribut tindakan menentukan tindakan yang akan dilakukan saat formulir dikirimkan.
+
+    Biasanya, data formulir dikirim ke file di server saat pengguna mengklik tombol kirim.
+
+    Pada contoh di bawah ini, data formulir dikirim ke file bernama "action_page.php". File ini berisi skrip sisi server yang menangani data formulir:
+
+    Contoh
+    Di kirim
+    , kirim data formulir ke "action_page.php":
+
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    Tips: Jika atribut tindakan dihilangkan, tindakan diatur ke halaman saat ini.
+
+The Target Attribute
+    Atribut target menentukan tempat menampilkan respons yang diterima setelah mengirimkan formulir.
+
+    Atribut target dapat memiliki salah satu dari nilai berikut:
+
+    Deskripsi Nilai
+    _blank -> Respon ditampilkan di jendela atau tab baru
+
+    _self  -> Tanggapan ditampilkan di jendela saat ini
+
+    _parent -> Respons ditampilkan di bingkai induk
+
+    _top -> Respons ditampilkan di seluruh jendela
+
+    framename -> Respon ditampilkan dalam iframe bernama
+
+    Nilai defaultnya adalah _self yang berarti respons akan terbuka di jendela saat ini.
+
+    Contoh
+    Di sini, hasil yang dikirimkan akan terbuka di tab browser baru:
+
+    <form action="/action_page.php" target="_blank">
+
+The Method Attribute
+
+    Atribut method menentukan metode HTTP yang akan digunakan saat mengirimkan data formulir.
+
+    Form-data dapat dikirim sebagai variabel URL (dengan method="get") atau sebagai HTTP post transaction (dengan method="post").
+
+    Metode HTTP default saat mengirimkan data formulir adalah GET.
+
+    Contoh
+    Contoh ini menggunakan metode GET saat mengirimkan data formulir:
+
+    <form action="/action_page.php" method="get">
+
+    Contoh
+    Contoh ini menggunakan metode POST saat mengirimkan data formulir:
+
+    <form action="/action_page.php" method="post">
+
+    Catatan tentang GET:
+
+    1.  Menambahkan data formulir ke URL, dalam pasangan nama/nilai
+    2.  JANGAN PERNAH menggunakan GET untuk mengirim data sensitif! (data formulir yang dikirimkan terlihat di URL!)
+    3.  Panjang URL terbatas (2048 karakter)
+    4.  Berguna untuk pengiriman formulir di mana pengguna ingin mem-bookmark hasilnya
+    5.  GET bagus untuk data yang tidak aman, seperti string kueri di Google
+
+    Catatan tentang POST:
+
+    1.  Menambahkan data formulir di dalam badan permintaan HTTP (data formulir yang dikirimkan tidak ditampilkan di URL)
+    2.  POST tidak memiliki batasan ukuran, dan dapat digunakan untuk mengirim data dalam jumlah besar.
+    3.  Pengiriman formulir dengan POST tidak dapat di-bookmark
+
+    Tips: Selalu gunakan POST jika data formulir berisi informasi sensitif atau pribadi!
+
+The Autocomplete Attribute
+    Atribut pelengkapan otomatis menentukan apakah suatu formulir harus dilengkapi atau dimatikan secara otomatis.
+
+    Saat pelengkapan otomatis diaktifkan, browser secara otomatis melengkapi nilai berdasarkan nilai yang telah dimasukkan pengguna sebelumnya.
+
+    Contoh
+    Formulir dengan pelengkapan otomatis di:
+
+    <form action="/action_page.php" autocomplete="on">
+
+The Novalidate Attribute
+    Atribut novalidate adalah atribut boolean.
+
+    Saat ada, ini menentukan bahwa form-data (input) tidak boleh divalidasi saat dikirimkan.
+
+    Contoh
+    Formulir dengan atribut novalidate:
+
+    <form action="/action_page.php" novalidate>
+
+List of All <form> Attributes
+
+    Deskripsi           Atribut
+    accept-charset      Menentukan pengkodean karakter yang digunakan untuk pengiriman formulir
+
+    action              Menentukan ke mana mengirim formulir-data saat formulir dikirimkan
+
+    autocomplete        Menentukan apakah formulir harus dilengkapi atau dimatikan secara otomatis
+
+    enctype              Menentukan bagaimana form-data harus dikodekan saat mengirimkannya ke server (hanya untuk method="post")
+
+    method              Menentukan metode HTTP untuk digunakan saat mengirim form-data
+    name Menentukan nama formulir
+
+    novalidate          Menentukan bahwa formulir tidak boleh divalidasi saat dikirimkan
+
+    rel                 Menentukan hubungan antara sumber tertaut dan dokumen saat ini
+
+    target              Menentukan tempat menampilkan respons yang diterima setelah mengirimkan formulir

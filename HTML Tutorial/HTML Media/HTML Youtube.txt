@@ -1,0 +1,107 @@
+# Video YouTube HTML
+
+Cara termudah untuk memutar video dalam HTML, adalah dengan menggunakan YouTube.
+
+Berjuang dengan Format Video?
+
+    Mengonversi video ke format yang berbeda bisa jadi sulit dan memakan waktu.
+
+    Solusi yang lebih mudah adalah membiarkan YouTube memutar video di halaman web Anda.
+
+Id Video YouTube
+
+    YouTube akan menampilkan id (seperti tgbNymZ7vqY), saat Anda menyimpan (atau memutar) video.
+
+    Anda dapat menggunakan id ini, dan merujuk ke video Anda dalam kode HTML.
+
+
+Memutar Video YouTube dalam HTML
+
+    Untuk memutar video Anda di halaman web, lakukan hal berikut:
+
+    Unggah video ke YouTube
+    Catat id videonya
+    Tentukan <iframe> elemen di halaman web Anda
+    Biarkan src atribut mengarah ke URL video
+    Gunakan atribut width dan height untuk menentukan dimensi pemutar
+    Tambahkan parameter lain ke URL (lihat di bawah)
+
+    Contoh :
+
+    <!DOCTYPE html>
+    <html>
+    <body>
+
+        <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+        </iframe>
+
+    </body>
+    </html>
+
+
+Putar Otomatis YouTube + Bisukan
+    Anda dapat membiarkan video Anda mulai diputar secara otomatis saat pengguna mengunjungi halaman tersebut, dengan menambahkannya autoplay=1 ke URL YouTube. Namun, memulai video secara otomatis akan mengganggu pengunjung Anda!
+
+
+    Tambahkan mute=1 setelah autoplay=1agar video Anda mulai diputar secara otomatis (namun dibisukan).
+
+YouTube - Putar Otomatis + Dibisukan
+
+    Contoh :
+
+    <!DOCTYPE html>
+    <html>
+    <body>
+
+        <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+        </iframe>
+
+    </body>
+    </html>
+
+
+Daftar Putar YouTube
+    Daftar video yang akan diputar dipisahkan koma (selain URL asli).
+
+Putaran YouTube
+    Tambahkan loop=1 agar video Anda berputar selamanya.
+
+    Nilai 0 (default): Video hanya akan diputar sekali.
+
+    Nilai 1: Video akan berulang (selamanya).
+
+YouTube - Putaran
+
+    Contoh : 
+
+    <!DOCTYPE html>
+    <html>
+    <body>
+
+        <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
+        </iframe>
+
+    </body>
+    </html>
+
+Kontrol YouTube
+
+    Tambahkan controls=0untuk tidak menampilkan kontrol di pemutar video.
+
+    Nilai 0: Kontrol pemutar tidak ditampilkan.
+
+    Nilai 1 (default): Tampilan kontrol pemutar.
+
+YouTube - Kontrol
+
+    Contoh :
+
+    <!DOCTYPE html>
+    <html>
+    <body>
+
+        <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
+        </iframe>
+
+    </body>
+    </html>

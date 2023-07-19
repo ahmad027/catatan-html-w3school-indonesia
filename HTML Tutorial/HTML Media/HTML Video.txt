@@ -1,0 +1,140 @@
+# HTML video
+
+    Elemen HTML <video>digunakan untuk menampilkan video di halaman web.
+
+CONTOH :
+
+    <!DOCTYPE html> 
+    <html> 
+    <body> 
+
+        <video width="400" controls>
+        <source src="mov_bbb.mp4" type="video/mp4">
+        <source src="mov_bbb.ogg" type="video/ogg">
+        Your browser does not support HTML video.
+        </video>
+
+        <p>
+        Video courtesy of 
+        <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.
+        </p>
+
+    </body> 
+    </html>
+
+
+Elemen <video> HTML
+Untuk menampilkan video dalam HTML, gunakan <video>elemen:
+
+    <!DOCTYPE html>
+    <html>
+    <body>
+
+        <video width="320" height="240" controls>
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+
+    </body>
+    </html>
+
+
+HTML <video> Putar otomatis
+Untuk memulai video secara otomatis, gunakan autoplayatribut:
+
+    Contoh
+
+    <!DOCTYPE html>
+    <html>
+    <body>
+
+        <video width="320" height="240" autoplay>
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+
+    </body>
+    </html>
+
+
+Tambahkan mutedsetelah autoplayagar video Anda mulai diputar secara otomatis (namun dibisukan):
+
+    <!DOCTYPE html>
+    <html>
+    <body>
+
+        <video width="320" height="240" autoplay muted>
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+
+    </body>
+    </html>
+
+
+Video HTML - Metode, Properti, dan Acara
+
+    DOM HTML mendefinisikan metode, properti, dan peristiwa untuk <video>elemen.
+
+    Ini memungkinkan Anda memuat, memutar, dan menjeda video, serta mengatur durasi dan volume.
+
+    Ada juga acara DOM yang dapat memberi tahu Anda saat video mulai diputar, dijeda, dll.
+
+    Contoh : 
+
+    <!DOCTYPE html> 
+    <html> 
+    <body> 
+
+        <div style="text-align:center"> 
+            <button onclick="playPause()">Play/Pause</button> 
+            <button onclick="makeBig()">Big</button>
+            <button onclick="makeSmall()">Small</button>
+            <button onclick="makeNormal()">Normal</button>
+            <br><br>
+
+            <video id="video1" width="420">
+                <source src="mov_bbb.mp4" type="video/mp4">
+                <source src="mov_bbb.ogg" type="video/ogg">
+                Your browser does not support HTML video.
+            </video>
+        </div> 
+
+        <script> 
+        var myVideo = document.getElementById("video1"); 
+
+        function playPause() { 
+        if (myVideo.paused) 
+            myVideo.play(); 
+        else 
+            myVideo.pause(); 
+        } 
+
+        function makeBig() { 
+            myVideo.width = 560; 
+        } 
+
+        function makeSmall() { 
+            myVideo.width = 320; 
+        } 
+
+        function makeNormal() { 
+            myVideo.width = 420; 
+        } 
+        </script> 
+
+        <p>Video courtesy of <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.</p>
+
+    </body> 
+    </html>
+
+Tag Video HTML
+
+    <video> Menentukan video atau film 
+    
+    <source> Menentukan beberapa sumber daya media untuk elemen media, seperti <video> dan <audio> 
+    
+    <track> Menentukan trek teks di pemutar media

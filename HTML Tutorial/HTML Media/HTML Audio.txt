@@ -1,0 +1,80 @@
+# HTML audio
+
+Elemen HTML <audio>digunakan untuk memutar file audio di halaman web.
+
+Elemen <audio> HTML
+
+    Untuk memutar file audio dalam HTML, gunakan <audio>elemen:
+
+    Contoh :
+
+    <!DOCTYPE html>
+    <html>
+    <body>
+
+        <audio controls>
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+    </body>
+    </html>
+
+
+Audio HTML - Cara Kerjanya
+
+    Atribut controls menambahkan kontrol audio, seperti putar, jeda, dan volume.
+
+    Elemen <source> memungkinkan Anda untuk menentukan file audio alternatif yang dapat dipilih oleh browser. Browser akan menggunakan format pertama yang dikenali.
+
+    Teks di antara tag <audio> dan </audio>hanya akan ditampilkan di browser yang tidak mendukung <audio>elemen tersebut.
+
+HTML <audio> Putar Otomatis
+
+    Untuk memulai file audio secara otomatis, gunakan autoplayatribut:
+
+    Contoh
+
+    <!DOCTYPE html>
+    <html>
+    <body>
+
+        <audio controls autoplay>
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+    </body>
+    </html>
+
+
+Tambahkan mutedsetelah autoplay agar file audio Anda mulai diputar secara otomatis (namun dibisukan):
+
+    <!DOCTYPE html>
+    <html>
+    <body>
+
+        <audio controls autoplay muted>
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+    </body>
+    </html>
+
+
+Audio HTML - Metode, Properti, dan Acara
+
+    DOM HTML mendefinisikan metode, properti, dan peristiwa untuk <audio> elemen.
+
+    Ini memungkinkan Anda memuat, memutar, dan menjeda audio, serta mengatur durasi dan volume.
+
+    Ada juga peristiwa DOM yang dapat memberi tahu Anda saat audio mulai diputar, dijeda, dll.
+
+
+
+
+

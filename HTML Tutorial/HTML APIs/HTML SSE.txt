@@ -1,0 +1,113 @@
+# HTML SSE API
+
+    Server-Sent Events (SSE) memungkinkan halaman web mendapatkan pembaruan dari server.
+
+
+Peristiwa Terkirim Server - Perpesanan Satu Arah
+
+    Peristiwa yang dikirim server adalah saat halaman web secara otomatis mendapatkan pembaruan dari server.
+
+    Ini juga dimungkinkan sebelumnya, tetapi halaman web harus menanyakan apakah ada pembaruan yang tersedia. Dengan acara yang dikirim server, pembaruan datang secara otomatis.
+
+    Contoh: Pembaruan Facebook/Twitter, pembaruan harga saham, umpan berita, hasil olahraga, dll.
+
+
+Terima Pemberitahuan Acara yang Dikirim Server
+
+    Objek EventSource digunakan untuk menerima notifikasi event yang dikirim oleh server:
+
+    Contoh
+
+    <!DOCTYPE html>
+    <html>
+    <body>
+
+        <h1>Getting server updates</h1>
+        <div id="result"></div>
+
+        <script>
+            if(typeof(EventSource) !== "undefined") {
+            var source = new EventSource("demo_sse.php");
+            source.onmessage = function(event) {
+                document.getElementById("result").innerHTML += event.data + "<br>";
+            };
+            } else {
+            document.getElementById("result").innerHTML = "Sorry, your browser does not support server-sent events...";
+            }
+        </script>
+
+    </body>
+    </html>
+
+
+    Contoh menjelaskan:
+
+    Buat objek EventSource baru, dan tentukan URL halaman yang mengirimkan pembaruan (dalam contoh ini "demo_sse.php")
+
+    Setiap kali update diterima, event onmessage terjadi
+
+    Saat event onmessage terjadi, masukkan data yang diterima ke dalam elemen dengan id="result"
+
+
+Periksa Dukungan Acara yang Dikirim Server
+
+    Dalam contoh tryit di atas ada beberapa baris kode tambahan untuk memeriksa dukungan browser untuk peristiwa yang dikirim server:
+
+        if(typeof(EventSource) !== "undefined") {
+        // Yes! Server-sent events support!
+        // Some code.....
+        } else {
+        // Sorry! No server-sent events support..
+        }
+
+
+Contoh Kode Sisi Server
+
+    Agar contoh di atas berfungsi, Anda memerlukan server yang mampu mengirim pembaruan data (seperti PHP atau ASP).
+
+    Sintaks aliran peristiwa sisi server sederhana. Setel tajuk "Jenis Konten" ke "teks/aliran peristiwa". Sekarang Anda dapat mulai mengirim aliran acara.
+
+    // Kode dalam PHP (demo_sse.php):
+
+    <?php
+    header('Content-Type: text/event-stream');
+    header('Cache-Control: no-cache');
+
+    $time = date('r');
+    echo "data: The server time is: {$time}\n\n";
+    flush();
+    ?>
+
+
+   // Kode dalam ASP (VB) (demo_sse.asp):
+
+    <%
+    Response.ContentType = "text/event-stream"
+    Response.Expires = -1
+    Response.Write("data: The server time is: " & now())
+    Response.Flush()
+    %>
+
+    Kode menjelaskan:
+
+    Set the "Content-Type" header to "text/event-stream"
+
+    Tentukan bahwa halaman tidak boleh di-cache
+
+    Keluarkan data untuk dikirim ( Selalu mulai dengan "data:")
+
+    Siram data keluaran kembali ke halaman web
+
+
+Objek EventSource
+
+    Dalam contoh di atas, kami menggunakan event onmessage untuk mendapatkan pesan. Tetapi acara lain juga tersedia:
+
+
+    Events	Description
+
+    onopen	Ketika koneksi ke server dibuka
+
+    onmessage	Saat pesan diterima
+
+    onerror	Ketika terjadi kesalahan

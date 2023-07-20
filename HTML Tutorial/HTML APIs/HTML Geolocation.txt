@@ -1,0 +1,184 @@
+# HTML Geolocation API
+
+    HTML Geolocation API digunakan untuk menemukan posisi pengguna.
+
+
+Temukan Posisi Pengguna
+
+    HTML Geolocation API digunakan untuk mendapatkan posisi geografis pengguna.
+
+    Karena ini dapat membahayakan privasi, posisi tersebut tidak tersedia kecuali pengguna menyetujuinya.
+
+
+Menggunakan Geolokasi HTML
+
+    Metode ini getCurrentPosition()digunakan untuk mengembalikan posisi pengguna.
+
+    Contoh di bawah mengembalikan lintang dan bujur posisi pengguna:
+
+    <!DOCTYPE html>
+    <html>
+    <body>
+
+        <p>Click the button to get your coordinates.</p>
+
+        <button onclick="getLocation()">Try It</button>
+
+        <p id="demo"></p>
+
+        <script>
+            var x = document.getElementById("demo");
+
+            function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else { 
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+            }
+
+            function showPosition(position) {
+            x.innerHTML = "Latitude: " + position.coords.latitude + 
+            "<br>Longitude: " + position.coords.longitude;
+            }
+        </script>
+
+    </body>
+    </html>
+
+
+    Contoh menjelaskan:
+
+    Periksa apakah Geolokasi didukung
+    Jika didukung, jalankan metode getCurrentPosition(). Jika tidak, tampilkan pesan kepada pengguna
+    Jika metode getCurrentPosition() berhasil, ia mengembalikan objek koordinat ke fungsi yang ditentukan dalam parameter (showPosition)
+    Fungsi showPosition() menampilkan Lintang dan Bujur
+    Contoh di atas adalah skrip Geolokasi yang sangat mendasar, tanpa penanganan kesalahan.
+
+
+Menangani Kesalahan dan Penolakan
+
+    Parameter kedua dari getCurrentPosition()metode ini digunakan untuk menangani kesalahan. Ini menentukan fungsi untuk dijalankan jika gagal mendapatkan lokasi pengguna:
+
+    Contoh :
+
+    <!DOCTYPE html>
+    <html>
+    <body>
+
+        <p>Click the button to get your coordinates.</p>
+
+        <button onclick="getLocation()">Try It</button>
+
+        <p id="demo"></p>
+
+        <script>
+            var x = document.getElementById("demo");
+
+            function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition, showError);
+            } else { 
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+            }
+
+            function showPosition(position) {
+            x.innerHTML = "Latitude: " + position.coords.latitude + 
+            "<br>Longitude: " + position.coords.longitude;
+            }
+
+            function showError(error) {
+            switch(error.code) {
+                case error.PERMISSION_DENIED:
+                x.innerHTML = "User denied the request for Geolocation."
+                break;
+                case error.POSITION_UNAVAILABLE:
+                x.innerHTML = "Location information is unavailable."
+                break;
+                case error.TIMEOUT:
+                x.innerHTML = "The request to get user location timed out."
+                break;
+                case error.UNKNOWN_ERROR:
+                x.innerHTML = "An unknown error occurred."
+                break;
+            }
+            }
+        </script>
+
+    </body>
+    </html>
+
+
+
+Informasi khusus lokasi
+
+    Halaman ini telah mendemonstrasikan cara menampilkan posisi pengguna di peta.
+
+    Geolokasi juga sangat berguna untuk informasi spesifik lokasi, seperti:
+
+    Informasi lokal terkini
+    Menampilkan Tempat Menarik di dekat pengguna
+    Navigasi belokan demi belokan (GPS)
+
+
+Metode getCurrentPosition() - Mengembalikan Data
+
+    Metode getCurrentPosition()mengembalikan objek pada kesuksesan. Properti lintang, bujur, dan akurasi selalu dikembalikan. Properti lainnya dikembalikan jika tersedia:
+
+    coords.latitude	=> Garis lintang sebagai angka desimal (selalu dikembalikan)
+
+    coords.longitude => Bujur sebagai angka desimal (selalu dikembalikan)
+
+    coords.accuracy	=> Akurasi posisi (selalu dikembalikan)
+
+    coords.altitude	=> Ketinggian dalam meter di atas permukaan laut rata-rata (dikembalikan jika tersedia)
+
+    coords.altitudeAccuracy	=> Akurasi ketinggian posisi (dikembalikan jika tersedia)
+
+    coords.heading => Judul sebagai derajat searah jarum jam dari Utara (dikembalikan jika tersedia)
+
+    coords.speed => Kecepatan dalam meter per detik (dikembalikan jika tersedia)
+
+    timestamp => Tanggal/waktu respons (dikembalikan jika tersedia)
+
+
+Objek Geolokasi - Metode menarik lainnya
+
+    Objek Geolokasi juga memiliki metode menarik lainnya:
+
+    watchPosition()- Mengembalikan posisi pengguna saat ini dan terus mengembalikan posisi yang diperbarui saat pengguna bergerak (seperti GPS di dalam mobil).
+    clearWatch()- Menghentikan watchPosition()metode.
+    Contoh di bawah ini menunjukkan metodenya watchPosition(). Anda memerlukan perangkat GPS yang akurat untuk menguji ini (seperti smartphone):
+
+    Contoh :
+
+    <!DOCTYPE html>
+    <html>
+    <body>
+
+        <p>Click the button to get your coordinates.</p>
+
+        <button onclick="getLocation()">Try It</button>
+
+        <p id="demo"></p>
+
+        <script>
+            var x = document.getElementById("demo");
+
+            function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.watchPosition(showPosition);
+            } else { 
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+            }
+                
+            function showPosition(position) {
+                x.innerHTML="Latitude: " + position.coords.latitude + 
+                "<br>Longitude: " + position.coords.longitude;
+            }
+        </script>
+
+    </body>
+    </html>
